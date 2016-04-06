@@ -1,0 +1,26 @@
+#define VERINF1 1
+VERINF1 VERSIONINFO
+FILEVERSION 1,0,2
+PRODUCTVERSION 1,0,2
+FILEOS 0x00000004
+FILETYPE 0x00000001
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "080904B0"
+    BEGIN
+      VALUE "CompanyName", "Just Everywhere\0"
+      VALUE "FileVersion", "1.0.2\0"
+      VALUE "FileDescription", "4x4 Sliding Puzzle Game\0"
+      VALUE "InternalName", "Slide\0"
+      VALUE "LegalCopyright", "Just Everywhere\0"
+      VALUE "OriginalFilename", "Slide.exe\0"
+      VALUE "ProductName", "JE Slide\0"
+      VALUE "ProductVersion", "1.0.2\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0809, 0x04B0
+  END
+END

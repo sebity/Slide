@@ -1,0 +1,7 @@
+#include "\masm32\include\resource.h"
+#include "Res/SlideVer.rc"
+#include "Res/PreviewDlg.rc"
+#include "Res/SlideMenu.rc"
+
+
+

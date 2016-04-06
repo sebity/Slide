@@ -1,0 +1,18 @@
+:Base slide.hlp
+1 Getting Started
+2 Description=description>Main
+2 System Requirements=system-requirements>Main
+2 Picture and Numbers Mode=picture-and-numbers-mode>Main
+1 Interface
+2 Menu
+3 Game Menu=game-menu>Main
+3 Picture Menu=picture-menu>Main
+3 Colours Menu=colours-menu>Main
+3 Help Menu=help-menu>Main
+2 Toolbar=toolbar>Main
+2 Status Bar=status-bar>Main
+1 Demo/Full Version
+2 Limitations of the demo=limitations-of-the-demo>Main
+2 How to buy a full version=how-to-buy-a-full-version>Main
+1 License Agreement=license-agreement>Main
+

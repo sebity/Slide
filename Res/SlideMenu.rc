@@ -1,0 +1,93 @@
+#define     MI_NEWGAME              101
+#define     MI_OPENBITMAP           102
+#define     MI_DIFFICULTYEASY       103
+#define     MI_DIFFICULTYMEDIUM     104
+#define     MI_DIFFICULTYHARD       105
+#define     MI_USESTANDARD          106
+#define     MI_USENUMBERS           107
+#define     MI_USEFILE              108
+#define     MI_COLORRED             109
+#define     MI_COLORGREEN           110
+#define     MI_COLORBLUE            111
+#define     MI_COLORBLACK           112
+#define     MI_COLORWHITE           113
+#define     MI_HINT                 114
+#define     MI_MOVELIMITON          115
+#define     MI_MOVELIMITOFF         116
+#define     MI_TIMELIMITON          117
+#define     MI_TIMELIMITOFF         118
+#define     MI_HELP                 119
+#define     MI_ABOUT                120
+
+#define     MAINMENU                301
+
+#define     ICON1_BIG               400
+#define     ICON2_SMALL             401
+
+#define     ID_ABOUTDIALOG          700
+
+#define     BMP_TOOLBAR             801
+#define     BMP_STARTBITMAP         802
+
+
+ICON1_BIG       ICON    DISCARDABLE     "Res\\big.ico"
+ICON2_SMALL     ICON    DISCARDABLE     "Res\\small.ico"
+BMP_TOOLBAR     BITMAP  DISCARDABLE     "Res\\toolbar.bmp"
+BMP_STARTBITMAP BITMAP  DISCARDABLE     "Res\\bird_8bit.bmp"
+
+
+MAINMENU    MENU DISCARDABLE
+BEGIN
+    POPUP "&Game"
+    BEGIN
+        MENUITEM "&New Game", MI_NEWGAME
+        MENUITEM "&Open Bitmap", MI_OPENBITMAP
+        POPUP "&Difficulty"
+        BEGIN
+            MENUITEM "&Easy", MI_DIFFICULTYEASY
+            MENUITEM "&Medium", MI_DIFFICULTYMEDIUM
+            MENUITEM "&Hard", MI_DIFFICULTYHARD
+        END
+        POPUP "&Move Limit"
+        BEGIN
+            MENUITEM "&Enabled", MI_MOVELIMITON
+            MENUITEM "&Disabled", MI_MOVELIMITOFF       
+        END
+        POPUP "&Time Limit"
+        BEGIN        
+            MENUITEM "&Enabled", MI_TIMELIMITON
+            MENUITEM "&Disabled", MI_TIMELIMITOFF
+        END
+    END
+    POPUP "&Picture"
+    BEGIN
+        MENUITEM "Use &standard picture", MI_USESTANDARD
+        MENUITEM "Use &numbers", MI_USENUMBERS
+        MENUITEM "Use &bitmap file", MI_USEFILE
+        MENUITEM "Give Hint", MI_HINT
+    END
+    POPUP "&Colours"
+    BEGIN
+        MENUITEM "&Red Colour Scheme", MI_COLORRED
+        MENUITEM "&Green Color Scheme", MI_COLORGREEN
+        MENUITEM "&Blue Colour Scheme", MI_COLORBLUE
+        MENUITEM "&Black Colour Scheme", MI_COLORBLACK
+        MENUITEM "&White Colour Scheme", MI_COLORWHITE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics", MI_HELP
+        MENUITEM "&About", MI_ABOUT
+    END
+END
+
+
+ID_ABOUTDIALOG  DIALOG  DISCARDABLE     0, 0, 170, 80
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Slide..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON    ICON1_BIG, 201, 7, 7, 21, 20
+    LTEXT   "Slide 1.0.2\n\nCopyright (C) 2009 Just Everywhere\n\nURL: http://www.justeverywhere.net/\n\nEmail: support@justeverywhere.net",
+            202, 36, 10, 120, 70
+END
